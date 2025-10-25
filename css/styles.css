@@ -110,15 +110,16 @@ h2 {
 .menu-items {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: center; /* Center items horizontally */
+  gap: 20px; /* Space between items */
+  padding: 20px;
 }
-
 .menu-image {
-  max-width: 400px;
+  max-width: 100%; /* So images don't overflow their container */
   height: auto;
   border-radius: 10px;
   margin-bottom: 15px;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
   display: block;
   margin-left: auto;
   margin-right: auto;
@@ -126,15 +127,13 @@ h2 {
 
 .item {
   background-color: #fff;
-  padding: 20px;
-  margin: 10px;
-  flex: 1 1 250px;
-  max-width: 300px;
   border-radius: 12px;
+  padding: 15px;
   box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  width: 250px; /* Adjust width as needed */
   text-align: center;
+  transition: transform 0.2s;
 }
-
 footer {
   background-color: #8b5e3c;
   color: #fff;
